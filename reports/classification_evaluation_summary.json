@@ -1,0 +1,88 @@
+{
+    "project": "Auspify Technologies Data Science Internship - Task 5",
+    "task_name": "Machine Learning Classification Model",
+    "objective": "Classify Netflix titles into demographic audience tiers based on metadata",
+    "target_classes": [
+        "Adults",
+        "Kids",
+        "Older Kids",
+        "Teens",
+        "accuracy",
+        "macro avg",
+        "weighted avg"
+    ],
+    "algorithm_comparison": [
+        {
+            "Algorithm": "Logistic Regression",
+            "Accuracy": 0.6384,
+            "Precision (Weighted)": 0.6328,
+            "Recall (Weighted)": 0.6384,
+            "F1-Score (Weighted)": 0.631
+        },
+        {
+            "Algorithm": "Multinomial Naive Bayes",
+            "Accuracy": 0.6325,
+            "Precision (Weighted)": 0.6276,
+            "Recall (Weighted)": 0.6325,
+            "F1-Score (Weighted)": 0.6266
+        },
+        {
+            "Algorithm": "Linear SVM",
+            "Accuracy": 0.6325,
+            "Precision (Weighted)": 0.6266,
+            "Recall (Weighted)": 0.6325,
+            "F1-Score (Weighted)": 0.6254
+        },
+        {
+            "Algorithm": "Random Forest",
+            "Accuracy": 0.6355,
+            "Precision (Weighted)": 0.6379,
+            "Recall (Weighted)": 0.6355,
+            "F1-Score (Weighted)": 0.6159
+        }
+    ],
+    "best_algorithm": "Logistic Regression",
+    "best_model_metrics": {
+        "accuracy": 0.6384,
+        "macro_avg_f1": 0.6109,
+        "weighted_avg_f1": 0.631
+    },
+    "per_class_performance": {
+        "Adults": {
+            "precision": 0.6848,
+            "recall": 0.7993,
+            "f1_score": 0.7376,
+            "support": 802
+        },
+        "Kids": {
+            "precision": 0.7222,
+            "recall": 0.5652,
+            "f1_score": 0.6341,
+            "support": 69
+        },
+        "Older Kids": {
+            "precision": 0.6507,
+            "recall": 0.5017,
+            "f1_score": 0.5665,
+            "support": 297
+        },
+        "Teens": {
+            "precision": 0.5324,
+            "recall": 0.4811,
+            "f1_score": 0.5055,
+            "support": 530
+        },
+        "macro avg": {
+            "precision": 0.6475,
+            "recall": 0.5868,
+            "f1_score": 0.6109,
+            "support": 1698
+        },
+        "weighted avg": {
+            "precision": 0.6328,
+            "recall": 0.6384,
+            "f1_score": 0.631,
+            "support": 1698
+        }
+    }
+}
